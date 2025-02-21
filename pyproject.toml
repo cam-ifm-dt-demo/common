@@ -1,0 +1,32 @@
+[project]
+name = "cam-ifm-dt-demo-common"
+version = "0.1.0"
+description = "Digital Twin demo: common modules"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "colorama>=0.4.6",
+    "fastapi>=0.115.8",
+    "fastapi-cli>=0.0.7",
+    "pydantic-settings>=2.7.1",
+    "sqlmodel>=0.0.22",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "autopep8>=2.3.2",
+    "ipykernel>=6.29.5",
+    "isort>=6.0.0",
+    "pylint>=3.3.4",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/cam_ifm_dt_demo"]
+
+[tool.isort]
+line_length = 100
+known_first_party = ["cam_ifm_dt_demo"]

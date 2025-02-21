@@ -1,2 +1,1 @@
-# common
-Common modules for the DT application
+# Common modules for the DT application
