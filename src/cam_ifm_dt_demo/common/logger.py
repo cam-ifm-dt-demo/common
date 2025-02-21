@@ -43,7 +43,7 @@ class MyFormatter(CustomFormatter):
         s2 = f"{c.Fore.BLUE}{record.name}{c.Fore.RESET}"
         s3 = f"{msg_color}{record.getMessage()}{c.Fore.RESET}"
         pad_left = max(0, 11 - __class__.clean_len(s1))
-        return f"{'': <{pad_left}}{s1} {s2}: {s3}"
+        return f"{'': <{pad_left}}{s1}  {s2}: {s3}"
 
 
 STREAM_HANDLER = logging.StreamHandler()
